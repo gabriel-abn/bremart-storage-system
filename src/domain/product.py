@@ -9,6 +9,9 @@ class ProductProps(TypedDict):
     price: float
     description: str
     bar_code: str
+    distributor_id: str
+    product_type: str
+    product_category: str
 
 
 class Product(Entity[ProductProps]):
@@ -17,10 +20,7 @@ class Product(Entity[ProductProps]):
 
     @staticmethod
     def create(props: ProductProps, id: str):
-        if props["name"] == "":
-            raise DomainError("Name is required")
-
         if props["price"] == 0:
-            raise DomainError("Price is required")
+            raise DomainError("Price is required.")
 
         return Product(props, id)
