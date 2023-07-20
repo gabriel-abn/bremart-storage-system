@@ -19,7 +19,7 @@ class Shipment(Entity[ShipmentProps]):
 
     @staticmethod
     def create(props: ShipmentProps, id: str):
-        if props["type"] not in ["air", "sea", "land"]:
+        if props["type"] not in ["AIR", "SEA", "LAND"]:
             raise DomainError("Shipment", "Type is not valid")
 
         if props["source"] == props["destiny"]:
