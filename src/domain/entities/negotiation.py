@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import NotRequired, TypedDict
 
-from domain.common import Entity
+from src.domain.common import DomainError, Entity
 
 
 class NegotiationStatus(Enum):
@@ -30,4 +30,10 @@ class Negotiation(Entity[NegotiationProps]):
 
     @staticmethod
     def create(props: NegotiationProps, id: str):
+        if props["products"] == []:
+            raise DomainError("Negotiation", "Products list cannot be empty.")
+
+        if props["total_value"] <= 0:
+            raise DomainError("Negotiation", "Invalid negotiation total value.")
+
         return Negotiation({"status": NegotiationStatus.PENDING, **props}, id)
