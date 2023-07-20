@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import TypedDict
 
-from src.domain.common import DomainError, Entity
+from src.domain.protocols import DomainError, Entity
 
 
 class ShipmentProps(TypedDict):
