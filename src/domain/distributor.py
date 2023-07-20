@@ -16,6 +16,6 @@ class Distributor(Entity[DistributorProps]):
     @staticmethod
     def create(props: DistributorProps, id: str):
         if len(props["cnpj"]) != 14:
-            raise DomainError("CNPJ not valid.")
+            raise DomainError("Distributor", "CNPJ not valid.")
 
         return Distributor(props, id)
