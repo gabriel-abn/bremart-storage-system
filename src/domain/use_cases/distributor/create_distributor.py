@@ -1,13 +1,12 @@
 from abc import abstractmethod
 from typing import TypedDict
 
+from src.domain.entities import DistributorProps
 from src.domain.protocols import UseCase
 
 
 class CreateDistributorParams(TypedDict):
-    cnpj: str
-    razao_social: str
-    branch: str
+    distributor: DistributorProps
 
 
 class CreateDistributorResult(TypedDict):
