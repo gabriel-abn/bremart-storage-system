@@ -7,6 +7,12 @@ This application is a microsservice and part of a project for personal studies a
 - Python
 - Flask
 
+## Methodologies and Patterns
+
+- Clean Architecture
+- DDD
+- SOLID
+
 ## Documentation
 
 - [PT-BR](./docs/pt-br/README.md)
