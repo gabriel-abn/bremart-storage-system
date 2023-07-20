@@ -1,7 +1,6 @@
 from typing import TypedDict
 
-from common.domain_error import DomainError
-from common.entity import Entity
+from src.domain.common import DomainError, Entity
 
 
 class DistributorProps(TypedDict):

@@ -1,7 +1,6 @@
 from typing import TypedDict
 
-from common.domain_error import DomainError
-from common.entity import Entity
+from src.domain.common import DomainError, Entity
 
 
 class ProductProps(TypedDict):
@@ -21,6 +20,6 @@ class Product(Entity[ProductProps]):
     @staticmethod
     def create(props: ProductProps, id: str):
         if props["price"] == 0:
-            raise DomainError("Price is required.")
+            raise DomainError("Product", "Price is required.")
 
         return Product(props, id)
