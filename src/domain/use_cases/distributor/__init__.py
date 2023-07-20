@@ -3,6 +3,7 @@ from .create_distributor import (
     CreateDistributorParams,
     CreateDistributorResult,
 )
+from .get_all_distributors import GetAllDistributors, GetAllDistributorsResult
 from .get_distributor import GetDistributor, GetDistributorParams, GetDistributorResult
 
 __all__ = [
@@ -12,4 +13,6 @@ __all__ = [
     "GetDistributor",
     "GetDistributorParams",
     "GetDistributorResult",
+    "GetAllDistributors",
+    "GetAllDistributorsResult",
 ]
