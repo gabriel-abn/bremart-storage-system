@@ -6,6 +6,7 @@ from src.domain.common import DomainError, Entity
 class StorageProps(TypedDict):
     local: dict[
         {
+            "country": str,
             "state": str,
             "city": str,
             "address": str,
