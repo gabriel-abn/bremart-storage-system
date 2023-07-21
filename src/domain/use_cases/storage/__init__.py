@@ -9,6 +9,7 @@ from .register_storage import (
     RegisterStorageParams,
     RegisterStorageResult,
 )
+from .remove_storage import RemoveStorage, RemoveStorageParams, RemoveStorageResult
 from .stock_products import StockProducts, StockProductsParams, StockProductsResult
 from .unstock_storage import (
     UnstockProducts,
@@ -37,4 +38,8 @@ __all__ = [
     "UnstockProducts",
     "UnstockProductsParams",
     "UnstockProductsResult",
+    # RemoveStorage
+    "RemoveStorage",
+    "RemoveStorageParams",
+    "RemoveStorageResult",
 ]
