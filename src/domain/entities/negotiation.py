@@ -21,7 +21,7 @@ class NegotiationProps(TypedDict):
             }
         ]
     ]
-    status: NotRequired[NegotiationStatus]
+    status: NegotiationStatus
 
 
 class Negotiation(Entity[NegotiationProps]):
