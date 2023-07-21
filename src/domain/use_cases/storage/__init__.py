@@ -12,7 +12,7 @@ from .register_storage import (
 )
 from .remove_storage import RemoveStorage, RemoveStorageParams, RemoveStorageResult
 from .stock_products import StockProducts, StockProductsParams, StockProductsResult
-from .unstock_storage import (
+from .unstock_products import (
     UnstockProducts,
     UnstockProductsParams,
     UnstockProductsResult,
