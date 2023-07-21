@@ -9,6 +9,7 @@ from .register_storage import (
     RegisterStorageParams,
     RegisterStorageResult,
 )
+from .stock_products import StockProducts, StockProductsParams, StockProductsResult
 
 __all__ = [
     # RegisterStorage
@@ -23,4 +24,8 @@ __all__ = [
     "EditStorage",
     "EditStorageParams",
     "EditStorageResult",
+    # StockProducts
+    "StockProducts",
+    "StockProductsParams",
+    "StockProductsResult",
 ]
