@@ -1,6 +1,11 @@
 from .edit_product import EditProduct, EditProductParams, EditProductResult
 from .get_all_products import GetAllProducts, GetAllProductsResult
 from .get_product import GetProduct, GetProductParams, GetProductResult
+from .get_products_per_distributor import (
+    GetProductsPerDistributor,
+    GetProductsPerDistributorParams,
+    GetProductsPerDistributorResult,
+)
 from .register_product import (
     RegisterProduct,
     RegisterProductParams,
@@ -23,4 +28,8 @@ __all__ = [
     "EditProduct",
     "EditProductParams",
     "EditProductResult",
+    # GetProductsPerDistributor
+    "GetProductsPerDistributor",
+    "GetProductsPerDistributorParams",
+    "GetProductsPerDistributorResult",
 ]
