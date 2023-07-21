@@ -1,4 +1,5 @@
 from .edit_storage import EditStorage, EditStorageParams, EditStorageResult
+from .get_all_storages import GetAllStorages, GetAllStoragesResult
 from .get_storage_by_id import (
     GetStorageById,
     GetStorageByIdParams,
@@ -42,4 +43,7 @@ __all__ = [
     "RemoveStorage",
     "RemoveStorageParams",
     "RemoveStorageResult",
+    # GetAllStorages
+    "GetAllStorages",
+    "GetAllStoragesResult",
 ]
