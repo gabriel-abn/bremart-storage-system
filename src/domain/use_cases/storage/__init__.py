@@ -10,6 +10,11 @@ from .register_storage import (
     RegisterStorageResult,
 )
 from .stock_products import StockProducts, StockProductsParams, StockProductsResult
+from .unstock_storage import (
+    UnstockProducts,
+    UnstockProductsParams,
+    UnstockProductsResult,
+)
 
 __all__ = [
     # RegisterStorage
@@ -28,4 +33,8 @@ __all__ = [
     "StockProducts",
     "StockProductsParams",
     "StockProductsResult",
+    # UnstockProducts
+    "UnstockProducts",
+    "UnstockProductsParams",
+    "UnstockProductsResult",
 ]
