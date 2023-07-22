@@ -20,7 +20,7 @@ class CreateDistributorUseCase(CreateDistributor):
         self.crypter = crypter
         self.uuid_generator = uuid_generator
 
-    def execute(self, params: CreateDistributorParams) -> CreateDistributorResult:
+    async def execute(self, params: CreateDistributorParams) -> CreateDistributorResult:
         id = self.uuid_generator.generate()
 
         if not id:
@@ -28,7 +28,7 @@ class CreateDistributorUseCase(CreateDistributor):
 
         distributor = Distributor.create(params["distributor"], id)
 
-        distributor_id = self.distributor_repository.create(distributor)
+        distributor_id = await self.distributor_repository.create(distributor)
 
         return {
             "crypted_id": self.crypter.encrypt(str(distributor_id["id"])),
