@@ -18,3 +18,7 @@ class IDistributorRepository(RelationalRepository):
     @abstractmethod
     async def find_by_cnpj(self, cnpj: str) -> DistributorProps:
         pass
+
+    @abstractmethod
+    async def find_all(self) -> list[DistributorProps]:
+        pass
