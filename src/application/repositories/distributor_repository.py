@@ -12,7 +12,7 @@ class IDistributorRepository(RelationalRepository):
         pass
 
     @abstractmethod
-    async def update(self, distributor: Distributor) -> DistributorProps:
+    async def update(self, distributor: Distributor) -> dict[{"id": int}]:
         pass
 
     @abstractmethod
