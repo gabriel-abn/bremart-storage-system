@@ -11,3 +11,7 @@ class IDistributorRepository(ABC):
     @abstractmethod
     async def update(self, distributor: Distributor) -> DistributorProps:
         pass
+
+    @abstractmethod
+    async def find_one(self, cnpj: str) -> DistributorProps:
+        pass
