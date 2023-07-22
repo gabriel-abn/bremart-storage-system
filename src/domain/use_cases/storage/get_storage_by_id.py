@@ -15,5 +15,5 @@ class GetStorageByIdResult(TypedDict):
 
 class GetStorageById(UseCase[GetStorageByIdParams, GetStorageByIdResult]):
     @abstractmethod
-    def execute(self, params: GetStorageByIdParams) -> GetStorageByIdResult:
+    async def execute(self, params: GetStorageByIdParams) -> GetStorageByIdResult:
         pass

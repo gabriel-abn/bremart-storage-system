@@ -17,5 +17,7 @@ class RegisterManyProducts(
     UseCase[RegisterManyProductsParams, RegisterManyProductsResult]
 ):
     @abstractmethod
-    def execute(self, params: RegisterManyProductsParams) -> RegisterManyProductsResult:
+    async def execute(
+        self, params: RegisterManyProductsParams
+    ) -> RegisterManyProductsResult:
         pass

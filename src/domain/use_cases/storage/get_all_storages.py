@@ -11,5 +11,5 @@ class GetAllStoragesResult(TypedDict):
 
 class GetAllStorages(UseCase[None, GetAllStoragesResult]):
     @abstractmethod
-    def execute(self) -> GetAllStoragesResult:
+    async def execute(self) -> GetAllStoragesResult:
         pass

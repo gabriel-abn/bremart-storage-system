@@ -15,5 +15,5 @@ class EditDistributorResult(TypedDict):
 
 class EditDistributor(UseCase[EditDistributorParams, EditDistributorResult]):
     @abstractmethod
-    def execute(self, params: EditDistributorParams) -> EditDistributorResult:
+    async def execute(self, params: EditDistributorParams) -> EditDistributorResult:
         pass

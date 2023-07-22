@@ -11,5 +11,5 @@ class GetAllNegotiationsResult(TypedDict):
 
 class GetAllNegotiations(UseCase[None, GetAllNegotiationsResult]):
     @abstractmethod
-    def execute(self) -> GetAllNegotiationsResult:
+    async def execute(self) -> GetAllNegotiationsResult:
         pass

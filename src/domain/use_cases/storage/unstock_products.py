@@ -15,5 +15,5 @@ class UnstockProductsResult(TypedDict):
 
 class UnstockProducts(UseCase[UnstockProductsParams, UnstockProductsResult]):
     @abstractmethod
-    def execute(self, params: UnstockProductsParams) -> UnstockProductsResult:
+    async def execute(self, params: UnstockProductsParams) -> UnstockProductsResult:
         pass

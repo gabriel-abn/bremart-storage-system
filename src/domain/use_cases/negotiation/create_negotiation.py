@@ -15,5 +15,5 @@ class CreateNegotiationResult(TypedDict):
 
 class CreateNegotiation(UseCase[CreateNegotiationParams, CreateNegotiationResult]):
     @abstractmethod
-    def execute(self, params: CreateNegotiationParams) -> CreateNegotiationResult:
+    async def execute(self, params: CreateNegotiationParams) -> CreateNegotiationResult:
         pass

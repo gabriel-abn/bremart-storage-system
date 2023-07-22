@@ -11,5 +11,5 @@ class GetAllProductsResult(TypedDict):
 
 class GetAllProducts(UseCase[None, GetAllProductsResult]):
     @abstractmethod
-    def execute(self) -> GetAllProductsResult:
+    async def execute(self) -> GetAllProductsResult:
         pass

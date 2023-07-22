@@ -15,5 +15,5 @@ class EditProductResult(TypedDict):
 
 class EditProduct(UseCase[EditProductParams, EditProductResult]):
     @abstractmethod
-    def execute(self, params: EditProductParams) -> EditProductResult:
+    async def execute(self, params: EditProductParams) -> EditProductResult:
         pass

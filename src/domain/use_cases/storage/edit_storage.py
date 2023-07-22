@@ -15,5 +15,5 @@ class EditStorageResult(TypedDict):
 
 class EditStorage(UseCase[EditStorageParams, EditStorageResult]):
     @abstractmethod
-    def execute(self, params: EditStorageParams) -> EditStorageResult:
+    async def execute(self, params: EditStorageParams) -> EditStorageResult:
         pass

@@ -15,5 +15,5 @@ class GetDistributorResult(TypedDict):
 
 class GetDistributor(UseCase[GetDistributorParams, GetDistributorResult]):
     @abstractmethod
-    def execute(self, params: GetDistributorParams) -> GetDistributorResult:
+    async def execute(self, params: GetDistributorParams) -> GetDistributorResult:
         pass

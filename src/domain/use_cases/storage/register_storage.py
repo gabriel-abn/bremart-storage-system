@@ -15,5 +15,5 @@ class RegisterStorageResult(TypedDict):
 
 class RegisterStorage(UseCase[RegisterStorageParams, RegisterStorageResult]):
     @abstractmethod
-    def execute(self, params: RegisterStorageParams) -> RegisterStorageResult:
+    async def execute(self, params: RegisterStorageParams) -> RegisterStorageResult:
         pass

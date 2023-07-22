@@ -17,7 +17,7 @@ class GetProductsPerDistributor(
     UseCase[GetProductsPerDistributorParams, GetProductsPerDistributorResult]
 ):
     @abstractmethod
-    def execute(
+    async def execute(
         self, params: GetProductsPerDistributorParams
     ) -> GetProductsPerDistributorResult:
         pass

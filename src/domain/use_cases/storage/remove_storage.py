@@ -14,5 +14,5 @@ class RemoveStorageResult(TypedDict):
 
 class RemoveStorage(UseCase[RemoveStorageParams, RemoveStorageResult]):
     @abstractmethod
-    def execute(self, params: RemoveStorageParams) -> RemoveStorageResult:
+    async def execute(self, params: RemoveStorageParams) -> RemoveStorageResult:
         pass

@@ -15,5 +15,5 @@ class RegisterProductResult(TypedDict):
 
 class RegisterProduct(UseCase[RegisterProductParams, RegisterProductResult]):
     @abstractmethod
-    def execute(self, params: RegisterProductParams) -> RegisterProductResult:
+    async def execute(self, params: RegisterProductParams) -> RegisterProductResult:
         pass
