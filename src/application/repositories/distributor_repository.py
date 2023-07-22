@@ -1,9 +1,12 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 
+from src.application.repositories.common.relational_repository import (
+    RelationalRepository,
+)
 from src.domain.entities.distributor import Distributor, DistributorProps
 
 
-class IDistributorRepository(ABC):
+class IDistributorRepository(RelationalRepository):
     @abstractmethod
     async def create(self, distributor: Distributor) -> dict[{"id": int}]:
         pass

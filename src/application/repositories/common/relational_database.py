@@ -20,11 +20,11 @@ class RelationalDatabase(ABC):
         self.cursor = cursor
 
     @abstractmethod
-    def connect(self, app_name: str) -> bool:
+    async def connect(self, app_name: str) -> bool:
         pass
 
     @abstractmethod
-    def query(
+    async def query(
         self,
         query: str,
         query_params: dict,
@@ -32,7 +32,7 @@ class RelationalDatabase(ABC):
         pass
 
     @abstractmethod
-    def queryNoCommit(
+    async def queryNoCommit(
         self,
         query: str,
         query_params: dict,
@@ -40,9 +40,9 @@ class RelationalDatabase(ABC):
         pass
 
     @abstractmethod
-    def commit(self) -> bool:
+    async def commit(self) -> bool:
         pass
 
     @abstractmethod
-    def close(self) -> bool:
+    async def close(self) -> bool:
         pass
