@@ -22,3 +22,7 @@ class IProductRepository(RelationalRepository):
     @abstractmethod
     async def get_all(self) -> list[ProductProps]:
         pass
+
+    @abstractmethod
+    async def find_with_filter(self, filter: dict) -> list[ProductProps]:
+        pass
