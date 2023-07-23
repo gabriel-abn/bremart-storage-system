@@ -10,5 +10,5 @@ class GetTypesAndCategoriesResult(TypedDict):
 
 class GetTypesAndCategories(UseCase[None, GetTypesAndCategoriesResult]):
     @abstractmethod
-    async def execute(self) -> GetTypesAndCategoriesResult:
+    def execute(self) -> GetTypesAndCategoriesResult:
         pass

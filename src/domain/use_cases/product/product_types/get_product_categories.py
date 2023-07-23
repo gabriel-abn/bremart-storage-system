@@ -16,7 +16,5 @@ class GetProductCategories(
     UseCase[GetProductCategoriesParams, GetProductCategoriesResult]
 ):
     @abstractmethod
-    async def execute(
-        self, params: GetProductCategoriesParams
-    ) -> GetProductCategoriesResult:
+    def execute(self, params: GetProductCategoriesParams) -> GetProductCategoriesResult:
         pass

@@ -6,6 +6,7 @@ from .get_products_per_distributor import (
     GetProductsPerDistributorParams,
     GetProductsPerDistributorResult,
 )
+from .product_types import *
 from .register_many_products import (
     RegisterManyProducts,
     RegisterManyProductsParams,
@@ -41,4 +42,14 @@ __all__ = [
     "RegisterManyProducts",
     "RegisterManyProductsParams",
     "RegisterManyProductsResult",
+    ## ProductTypes
+    "GetProductTypes",
+    "GetProductTypesResult",
+    # GetProductCategories
+    "GetProductCategories",
+    "GetProductCategoriesResult",
+    "GetProductCategoriesParams",
+    # GetTypesAndCategories
+    "GetTypesAndCategories",
+    "GetTypesAndCategoriesResult",
 ]
