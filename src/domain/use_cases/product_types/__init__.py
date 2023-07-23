@@ -4,6 +4,7 @@ from .get_product_categories import (
     GetProductCategoriesResult,
 )
 from .get_product_types import GetProductTypes, GetProductTypesResult
+from .get_types_and_categories import GetTypesAndCategories, GetTypesAndCategoriesResult
 
 __all__ = [
     # GetProductTypes
@@ -13,4 +14,7 @@ __all__ = [
     "GetProductCategories",
     "GetProductCategoriesResult",
     "GetProductCategoriesParams",
+    # GetTypesAndCategories
+    "GetTypesAndCategories",
+    "GetTypesAndCategoriesResult",
 ]
