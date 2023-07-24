@@ -11,4 +11,4 @@ class EditProductUseCase(EditProduct):
         self.product_repository = product_repository
 
     async def execute(self, params: EditProductParams) -> EditProductResult:
-        return await super().execute(params)
+        raise NotImplementedError()
