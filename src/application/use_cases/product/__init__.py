@@ -1,3 +1,4 @@
+from .edit_product_use_case import EditProductUseCase
 from .get_all_products_use_case import GetAllProductsUseCase
 from .get_product_use_case import GetProductUseCase
 from .get_products_per_distributor_use_case import GetProductsPerDistributorUseCase
@@ -10,4 +11,5 @@ __all__ = [
     "GetAllProductsUseCase",
     "GetProductsPerDistributorUseCase",
     "GetProductUseCase",
+    "EditProductUseCase",
 ]
